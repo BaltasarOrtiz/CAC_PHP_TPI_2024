@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fb07cc3713.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./multimedia/gamepad-solid.svg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header id="header">
+        <div>
+            <a href="#header">
+                <i class="fa-solid fa-film fa-bounce" style="color: #ffffff;">Cac-Movies</i>
+            </a>
+        </div>
+        <nav>
+            <a class="boton botones sinsubrayar" href="#tendencias">Tendencias</a>
+            <a class="boton botones sinsubrayar" href="pages/register.html">Registrarse</a>
+            <a id="iniciarSesion" class="boton3 botones origi sinsubrayar" href="pages/login.html">Iniciar Sesion</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CAROUSEL -->
+        <section id="seccion_carrousel">
+            <div class="carrousel_main">
+                <div class="titulos_carrousel_main">
+                    <H1>¡Películas y series ilimitadas en un solo lugar!</H1>
+                    <h5>Disfruta donde quieras.</h5>
+                    <h5>Cancela en cualquier momento.</h5>
+                </div>
+                <div class="container-carousel">
+                    <!--contenedor celeste-->
+                    <div class="carruseles" id="slider">
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (1).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (10).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (11).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (12).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (13).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (14).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (15).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (16).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (17).jpg" alt="">
+                        </section>
+                        <section class="slider-section" >
+                            <img src="assets/img/1 (18).jpg" alt="">
+                        </section>
+                    </div>
+                    <div class="btn-left"> <i class='bx bx-chevron-left'></i></div>
+                    <div class="btn-right"> <i class='bx bx-chevron-right'></i></div>
+                </div>
+            </div>
+        </section>
+         
+        <!-- BUSCADOR -->
+        <section class="buscadorPeliculas" id="buscadorPeliculas">
+            <div class="containerBuscador">
+                <h3 class="tituloBuscador">¿Qué película vemos hoy?</h3>
+                <form class="buscadorPeliculas">
+                    <input class="inputBuscador" name="inputBuscador" type="text" placeholder="Escribe tu próxima película..."/>
+                    <input class="botonBuscador" name="botonBuscador" type="submit" value="Buscar">
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- TENDENCIAS -->
+        <section class="tendencias" id="tendencias">
+    
+            <div>
+                <h2 class="titulo_tendencias">Las Tendencias de hoy</h2>
+            </div>
+            
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <div class="peliculas">
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (1).jpg" alt="Imagen 1" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 1</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (2).jpg" alt="Imagen 2" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 2</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (3).jpg" alt="Imagen 3" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 3</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (4).jpg" alt="Imagen 4" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 4</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (5).jpg" alt="Imagen 5" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 5</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (6).jpg" alt="Imagen 6" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 6</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="peliculas">
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (7).jpg" alt="Imagen 7" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 7</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (8).jpg" alt="Imagen 8" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 8</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (9).jpg" alt="Imagen 9" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 9</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (10).jpg" alt="Imagen 10" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 10</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (11).jpg" alt="Imagen 11" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 11</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="peliculas">
+                                <div class="pelicula">
+                                    <a href="pages/detalle.html">
+                                        <img src="assets/img/1 (12).jpg" alt="Imagen 12" class="imgTendencias">
+                                    </a>
+                                    <div class="tituloPelicula">
+                                        <h3>Titulo 12</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+        <hr>
+
+        <!-- LAS MAS ACLAMADAS -->
+        <section id="topGames" class="">
+            <div class="topGames__header">
+                <h2 class="topGames__subTittle">Las más aclamadas</h2>
+                <p class="topGames__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <article class="topGames__img">
+                <picture class="game__img">
+                    <img src="assets/img/1 (12).jpg" alt="aclamadas_1">
+                </picture>
+                <picture class="game__img">
+                    <img src="assets/img/1 (13).jpg" alt="aclamadas_2">
+                </picture>
+                <picture class="game__img">
+                    <img src="assets/img/1 (14).jpg" alt="aclamadas_3">
+                </picture>
+                <picture class="game__img">
+                    <img src="assets/img/1 (15).jpg" alt="aclamadas_4">
+                </picture>
+                <picture class="game__img">
+                    <img src="assets/img/1 (16).jpg" alt="aclamadas_5">
+                </picture>
+                <picture class="game__img">
+                    <img src="assets/img/1 (17).jpg" alt="aclamadas_6">
+                </picture>
+            </article>
+            <button id="" class="topGames__btn">SEE ALL</button>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <nav class="navegacion">
+            
+            <div class="listaFooter">
+                <ul class="listaNav">
+                    <li class="listaItem"><a class="linkNav" href="#">Términos y condiciones</a></li>
+                    <li class="listaItem"><a class="linkNav" href="#">Preguntas frecuentes</a></li>
+                    <li class="listaItem"><a class="linkNav" href="#">Ayuda</a></li>
+                    <li class="listaItem"><a class="linkNav" href="#">Sobre nosotros</a></li>
+                    <li class="listaItem"><a class="linkNav" href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="redesSociales">
+                <a href="https://www.facebook.com" class="redSocial">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.x.com" class="redSocial">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" class="redSocial">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.reddit.com" class="redSocial">
+                    <i class="fa-brands fa-reddit"></i>
+                </a>
+            </div>
+
+        </nav>
+
+        <a href="#header" class="flechaArriba">
+            <img src="assets/img/Red_Arrow_Head_Top-2-512.webp" alt="flechaArriba" class="imgFlecha">
+        </a>
+    </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</body>
+</html>
