@@ -981,6 +981,58 @@ header{
 
 }
 
+
+/* Estilos Peliculas API*/
+.tituloAPI{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 5px rgba(255, 85, 0, 0.8);
+}
+.movie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #fff;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    cursor: pointer;
+}
+.movie img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.movie-details {
+    max-width: 600px;
+    text-align: center;
+}
+
+.movie {
+    transition: background-image 2s ease-in-out;
+}
+
+.movie:hover {
+    background-image: linear-gradient(to right, #ffd700, #ae6711);
+}
+
+@media screen and (max-width:1200px){
+    .tituloAPI{
+        font-size: 2rem;
+    }
+    .movie img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .movie-details {
+        max-width: 400px;
+        margin-top: 10px;
+    }
+}
+
 /* Estilo para la barra de desplazamiento */
 ::-webkit-scrollbar {
     width: 8px; /* Ajusta el ancho de la barra de desplazamiento */
