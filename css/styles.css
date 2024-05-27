@@ -1019,6 +1019,19 @@ header{
     background-image: linear-gradient(to right, #ffd700, #ae6711);
 }
 
+@media screen and (max-width:1200px){
+    .tituloAPI{
+        font-size: 2rem;
+    }
+    .movie img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .movie-details {
+        max-width: 400px;
+        margin-top: 10px;
+    }
+}
 
 /* Estilo para la barra de desplazamiento */
 ::-webkit-scrollbar {
