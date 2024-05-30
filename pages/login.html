@@ -27,14 +27,16 @@
 
     <main id="main" class="mainIniciarSesion">
         <h2 class="tituloIniciarSesion">Iniciar sesión</h2>
-        <form action="#" method="post">
+        <form id="formInicioSesion" action="#" method="post">
             <div class="containerInputEmail">
                 <span class="iconoUser"><i class="fa-solid fa-user"></i></span>
-                <input class="email" type="email" placeholder="Correo electrónico" id="email" name="email" required>
+                <input class="email" type="text" placeholder="Correo electrónico" id="email" name="email">
+                <div id="emailError"></div>
             </div>
             <div class="containerInputPassword">
                 <span class="iconoPassword"><i class="fa-solid fa-key"></i></span>
-                <input class="password" type="password" placeholder="Contraseña" minlength="8" maxlength="20" id="password" name="password" required>
+                <input class="password" type="password" placeholder="Contraseña" minlength="8" maxlength="20" id="password" name="password">
+                <div id="passwordError"></div>
             </div>
             <div class="containerInputBotonIniciarSesion">
                 <input type="submit" value="Iniciar sesión" id="botonInicioSesion" class="btn btn-warning" name="botonInicioSesion">
@@ -47,5 +49,6 @@
 
     <script src="https://kit.fontawesome.com/925e30bdd3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/validations.js"></script>
 </body>
 </html>
