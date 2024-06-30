@@ -8,10 +8,15 @@ include 'db.php';
 include 'Peliculas.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
+$action = isset($_GET['action']) ? $_GET['action'] : null; // Verifica si 'action' está definido
 
 switch ($method) {
-    case 'GET':
-        handleGet($conn);
+    case 'GET': 
+        if ($action == 'createTable') {
+            createTable($conn);
+        } else {
+            handleGet($conn);
+        }
         break;
     case 'POST':
         handlePost($conn);
@@ -25,6 +30,20 @@ switch ($method) {
     default:
         echo json_encode(['message' => 'Método no permitido']);
         break;
+}
+
+function createTable($conn){
+    $sql = "CREATE TABLE IF NOT EXISTS peliculas (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        titulo VARCHAR(255) NOT NULL,
+        fecha_lanzamiento DATE NOT NULL,
+        genero VARCHAR(255) NOT NULL,            
+        duracion INT,
+        director VARCHAR(255),
+        reparto TEXT,
+        sinopsis TEXT
+    )";
+    $conn->exec($sql);
 }
 
 //este metodo me devuelve una pelicula o todas las peliculas
@@ -57,7 +76,6 @@ function handleGet($conn)
         echo json_encode(['peliculas' => $peliculaObjs]);
     }
 }
-
 
 //este metodo es para ingresar peliculas
 function handlePost($conn) 
@@ -103,8 +121,6 @@ function handlePost($conn)
         echo json_encode(['message' => 'Error al ingresar la película', 'error' => $e->getMessage()]);
     }
 }
-
-
 
 function handlePut($conn) 
 {

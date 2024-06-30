@@ -1,6 +1,5 @@
 <?php
-class Peliculas 
-{
+class Peliculas {
     public $id;
     public $titulo;
     public $fecha_lanzamiento;
@@ -40,6 +39,20 @@ class Peliculas
     public function toArray() 
     {
         return get_object_vars($this);
+    }
+
+    public function createTable($conn){
+        $sql = "CREATE TABLE IF NOT EXISTS peliculas (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            titulo VARCHAR(255) NOT NULL,
+            fecha_lanzamiento DATE NOT NULL,
+            genero VARCHAR(255) NOT NULL,            
+            duracion INT,
+            director VARCHAR(255),
+            reparto TEXT,
+            sinopsis TEXT
+        )";
+        $conn->exec($sql);
     }
 }
 ?>
