@@ -14,8 +14,10 @@ switch ($method) {
     case 'GET': 
         if ($action == 'createTable') {
             createTable($conn);
+            echo json_encode(['message' => 'Tabla creada correctamente']);
         } else if ($action == 'cargarPeliculas'){
             cargarPeliculas($conn);
+            echo json_encode(['message' => 'Peliculas cargadas correctamente']);
         } else {
             handleGet($conn);
         }
