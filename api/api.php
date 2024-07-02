@@ -14,6 +14,8 @@ switch ($method) {
     case 'GET': 
         if ($action == 'createTable') {
             createTable($conn);
+        } else if ($action == 'cargarPeliculas'){
+            cargarPeliculas($conn);
         } else {
             handleGet($conn);
         }
@@ -43,6 +45,17 @@ function createTable($conn){
         reparto TEXT,
         sinopsis TEXT
     )";
+    $conn->exec($sql);
+}
+
+function cargarPeliculas($conn){
+    $sql = "INSERT INTO peliculas (titulo, fecha_lanzamiento, genero, duracion, director, reparto, sinopsis) VALUES
+    ('El Padre', '2021-02-26', 'Drama', 97, 'Florian Zeller', 'Anthony Hopkins, Olivia Colman, Mark Gatiss, Olivia Williams, Imogen Poots, Rufus Sewell', 'Un hombre mayor que vive solo en Londres y rechaza toda ayuda de sus hijas, desconfiado y algo testarudo, empieza a experimentar un cambio en su salud mental que alterará su vida por completo.'),
+    ('Nomadland', '2021-02-19', 'Drama', 107, 'Chloé Zhao', 'Frances McDormand, David Strathairn, Linda May, Swankie, Bob Wells, Derek Endres', 'Tras el colapso económico de una ciudad en la zona rural de Nevada, Fern (Frances McDormand) carga sus cosas en una van y emprende la vida como nómada en la carretera.'),
+    ('Sound of Metal', '2021-01-29', 'Drama', 120, 'Darius Marder', 'Riz Ahmed, Olivia Cooke, Paul Raci, Lauren Ridloff, Mathieu Amalric, Tom Kemp', 'Ruben (Riz Ahmed) y Lou (Olivia Cooke) forman un dúo de heavy metal que recorre el país en su autocaravana. De repente, Ruben pierde la audición y su vida cambia por completo.'),
+    ('El juicio de los 7 de Chicago', '2020-10-16', 'Drama', 130, 'Aaron Sorkin', 'Eddie Redmayne, Alex Sharp, Sacha Baron Cohen, Jeremy Strong, John Carroll Lynch, Yahya Abdul-Mateen II', 'En 1969, siete personas fueron acusadas de conspirar para incitar disturbios en la Convención Nacional Demócrata en Chicago. El juicio que siguió fue uno de los más notorios de la historia de EE. UU.'),
+    ('El juicio de los 7 de Chicago', '2020-10-16', 'Drama', 130, 'Aaron Sorkin', 'Eddie Redmayne, Alex Sharp, Sacha Baron Cohen, Jeremy Strong, John Carroll Lynch, Yahya Abdul-Mateen II', 'En 1969, siete personas fueron acusadas de conspirar para incitar disturbios en la Convención Nacional Demócrata en Chicago. El juicio que siguió fue uno de los más notorios de la historia de EE. UU.'),
+    ('El juicio de los 7 de Chicago', '2020-10-16', 'Drama', 130, 'Aaron Sorkin', 'Eddie Redmayne, Alex Sharp, Sacha Baron Cohen, Jeremy Strong, John Carroll Lynch, Yahya Abdul-Mateen II', 'En 1969, siete personas fueron acusadas de conspirar para incitar disturbios en la Convención Nacional Demócrata en Chicago. El juicio que siguió fue uno de los más notorios de la historia de EE. UU.');";
     $conn->exec($sql);
 }
 
