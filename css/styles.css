@@ -1039,6 +1039,78 @@ header{
     }
 }
 
+/*Estilos para CRUD*/
+/*ESTILOS PARA MAIN ESCRITORIO*/
+.main_crud{
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+}
+
+.botonCargaPeliculas{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #fd6900;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sectionFormulario{
+    .form_crud{
+        background-color: #1C140F;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+        .row{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
+}
+.sectionFormularioTabla{
+    margin-top: 20px;
+}
+
+/*Media Query CRUD*/
+@media screen and (max-width: 1200px) {
+    .main_crud {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 250px;
+        margin-left: 40px;
+    }
+
+    .form_crud {
+        width: 300px; /* Asegúrate de que .form_crud esté correctamente referenciado si necesita estar dentro de .sectionFormulario */
+    }
+
+    .sectionFormularioTabla {
+        margin-top: 20px;
+        margin-bottom: 300px;
+    }
+
+    .contenedor_tabla{
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%; /* Hace que la tabla se ajuste al ancho de su contenedor */
+        max-width: 100%; /* Previene que la tabla se desborde fuera de su contenedor */
+    }
+}
+
 /* Estilo para la barra de desplazamiento */
 ::-webkit-scrollbar {
     width: 8px; /* Ajusta el ancho de la barra de desplazamiento */
